@@ -4,7 +4,7 @@ type State = {
   keyPressed: string;
 };
 
-export class App extends React.Component<State> {
+export class App extends React.Component<{}, State> {
   state: Readonly<State> = {
     keyPressed: 'Nothing was pressed yet',
   };
